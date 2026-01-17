@@ -8,7 +8,10 @@ const expenseRoutes= require('./routes/expenseRoutes');
 const dashboardRoutes= require('./routes/dashboardRoutes')
 const app= express();
 
-app.use(cors());
+app.use(cors({
+    origin:"*"
+}));
+
 dotenv.config();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
