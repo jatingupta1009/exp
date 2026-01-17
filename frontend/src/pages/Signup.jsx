@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../utils/axios";
 import { API_ENDPOINTS } from "../utils/api";
-import { UserContext } from "../context/userContextserContext";
+import { UserContext } from "../context/userContext";
 
 const Signup = () => {
   const [name, setName] = useState("");
